@@ -127,3 +127,14 @@ treemap.c:180:40: error: return from incompatible pointer type [-Werror=incompat
                                         ^
 cc1.exe: all warnings being treated as errors
 41915d6
+Sat, May  3, 2025  4:13:32 PM: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'firstTreeMap':
+treemap.c:181:16: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+         return minNode;
+                ^~~~~~~
+cc1.exe: all warnings being treated as errors
+d7c5152
