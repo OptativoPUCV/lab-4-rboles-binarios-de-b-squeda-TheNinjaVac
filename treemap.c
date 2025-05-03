@@ -193,5 +193,11 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = nextNode;
         return current->pair;
     }
+    // Caso 2: Si no hay subárbol derecho
+    TreeNode * parent = current->parent;
+    while (parent != NULL || current == parent->right) {
+        current = parent;
+        parent = parent->parent;
+    }
     return NULL;
 }
