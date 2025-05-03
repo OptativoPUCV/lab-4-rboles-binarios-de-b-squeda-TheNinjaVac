@@ -110,3 +110,9 @@ treemap.c:97:6: note: expected 'TreeNode * {aka struct TreeNode *}' but argument
       ^~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 b063a1d
+Sat, May  3, 2025  4:06:27 PM: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  18|3
+total_score: 40/70
+de48c67
