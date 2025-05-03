@@ -195,7 +195,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     // Caso 2: Si no hay subárbol derecho
     TreeNode * parent = current->parent;
-    while (parent != NULL || current == parent->right) {
+    while (parent != NULL && current == parent->right) {
         current = parent;
         parent = parent->parent;
     }
