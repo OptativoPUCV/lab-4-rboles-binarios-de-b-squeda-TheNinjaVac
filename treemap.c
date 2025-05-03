@@ -185,5 +185,13 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+    if (tree == NULL || tree->current == NULL) return NULL;
+    TreeNode * current = tree->current;
+    // Caso 1: Si hay un subárbol derecho
+    if (current->right != NULL) {
+        TreeNode * nextNode = minimum(current->right);
+        tree->current = nextNode;
+        return current->pair;
+    }
     return NULL;
 }
