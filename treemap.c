@@ -191,7 +191,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     if (current->right != NULL) {
         TreeNode * nextNode = minimum(current->right);
         tree->current = nextNode;
-        return current->pair;
+        return nextNode->pair;
     }
     // Caso 2: Si no hay subárbol derecho
     TreeNode * parent = current->parent;
